@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Força HTTPS em produção (localhost e IPs de desenvolvimento continuam em http)
+      if (location.protocol === 'http:' && /(^|\.)phong\.it$/.test(location.hostname)) {
+        location.replace('https://' + location.host + location.pathname + location.search + location.hash)
+      }
+    </script>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="canonical" href="https://phong.it/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#031238" />
+    <meta name="description" content="Phong — consultoria de TI para transformar tecnologia em resultado." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://phong.it/" />
+    <meta property="og:title" content="Phong | Consultoria de TI" />
+    <meta property="og:description" content="Phong — consultoria de TI para transformar tecnologia em resultado." />
+    <meta property="og:image" content="https://phong.it/thumb.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://phong.it/thumb.png" />
+    <title>Phong | Consultoria de TI</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

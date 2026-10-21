@@ -1,0 +1,229 @@
+:root {
+  --bg: #031238;
+  --surface: #0a1d4d;
+  --border: #19306b;
+  --text: #e7ecf5;
+  --muted: #9fb0d3;
+  --accent: #1a8cff;
+  --accent-dark: #0a6fe0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  color: var(--accent);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin: 0 0 1.25rem;
+}
+
+h3 {
+  margin: 0 0 0.5rem;
+}
+
+.container {
+  width: min(1100px, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.container--narrow {
+  width: min(640px, 100% - 2rem);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fefefe;
+  border-bottom: 1px solid var(--border);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  padding: 0.5rem 0;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.nav a {
+  color: #4a5a7d;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #0b1b45;
+  border-bottom-color: var(--accent);
+}
+
+.hero {
+  padding: clamp(4rem, 12vw, 8rem) 0;
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.hero em {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.section {
+  padding: 3rem 0 4rem;
+}
+
+.lead {
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.card p,
+.card ul {
+  margin: 0;
+  color: var(--muted);
+}
+
+.card ul {
+  padding-left: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--accent);
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 500;
+}
+
+.form input,
+.form textarea {
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 2px solid var(--accent);
+  border-color: transparent;
+}
+
+.form .btn {
+  justify-self: start;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.footer {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
