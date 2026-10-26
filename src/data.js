@@ -12,7 +12,7 @@ export const pillars = [
     title: 'Desenvolvimento de Software & Produtos Digitais',
     color: 'bg-primary',
     items: [
-      { icon: Code2, t: 'Full Stack & APIs', d: 'Node.js, Go, Python, React e TypeScript com contratos de API versionados, testes automatizados e documentação OpenAPI.' },
+      { icon: Code2, t: 'Full Stack & APIs', d: 'Java, Spring Boot, Node.js, Go, Python, React e TypeScript com contratos de API versionados, testes automatizados e documentação OpenAPI.' },
       { icon: Workflow, t: 'Modernização de Legados & Integrações', d: 'Strangler pattern para monólitos, integrações com Gov.br, DETRAN e meios de pagamento com idempotência e rastreabilidade.' },
       { icon: Zap, t: 'Hiperautomação de Regras de Negócio', d: 'Esteiras de crédito e processos orquestradas por motores de regras, filas e validações via API — menos operação manual, mais SLA.' },
     ],
@@ -68,7 +68,7 @@ export const steps = [
 ]
 
 export const stack = [
-  { c: 'Backend & APIs', i: ['Java', 'Spring', 'Node.js', 'Go', 'Python', 'REST', 'Microsserviços'] },
+  { c: 'Backend & APIs', i: ['Java', 'Spring Boot', 'Node.js', 'Go', 'Python', 'REST', 'Microsserviços'] },
   { c: 'Frontend', i: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'] },
   { c: 'Cloud & Containers', i: ['Azure', 'GCP', 'AWS', 'Docker', 'Kubernetes (AKS/GKE)', 'Helm'] },
   { c: 'DevOps & IaC', i: ['Terraform', 'ArgoCD', 'GitHub Actions', 'Azure DevOps'] },
