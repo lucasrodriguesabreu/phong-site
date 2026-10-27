@@ -13,7 +13,7 @@ export const pillars = [
     color: 'bg-primary',
     items: [
       { icon: Code2, t: 'Full Stack & APIs', d: 'Java, Spring Boot, Node.js, Go, Python, React e TypeScript com contratos de API versionados, testes automatizados e documentação OpenAPI.' },
-      { icon: Workflow, t: 'Modernização de Legados & Integrações', d: 'Strangler pattern para monólitos, integrações com Gov.br, DETRAN e meios de pagamento com idempotência e rastreabilidade.' },
+      { icon: Workflow, t: 'Modernização de Legados & Integrações', d: 'Strangler pattern para monólitos, integrações com IdWall, Gov.BR, Serasa e meios de pagamento com idempotência e rastreabilidade.' },
       { icon: Zap, t: 'Hiperautomação de Regras de Negócio', d: 'Esteiras de crédito e processos orquestradas por motores de regras, filas e validações via API — menos operação manual, mais SLA.' },
     ],
   },
