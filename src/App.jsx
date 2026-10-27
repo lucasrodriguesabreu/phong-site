@@ -22,7 +22,7 @@ export default function App() {
             Do código à nuvem, engenharia que <span className="text-sky">entrega resultado</span> de negócio.
           </h1>
           <p className="mt-8 max-w-3xl text-lg text-ink-muted md:text-xl">
-            Projetamos, construímos e operamos produtos ponta a ponta — de aplicações em React, Node.js, Go e Python
+            Projetamos, construímos e operamos produtos ponta a ponta — de aplicações Java, React, Node.js, Go e Python
             à infraestrutura em Azure e GCP provisionada com Terraform e orquestrada em Kubernetes.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
