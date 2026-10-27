@@ -30,15 +30,15 @@ export const pillars = [
 ]
 
 export const cases = [
-  {
+    {
     badge: 'Híbrido · Software + Infra',
-    title: 'Plataforma de Crédito e Validação Documental Automatizada',
-    problem: 'Análise de crédito dependia de conferência manual de documentos e consultas a múltiplos sistemas. SLA médio de 1h30 por proposta e gargalos em picos de demanda.',
-    solution: 'Esteira orientada a eventos com validações via API (bureaus, Gov.br, OCR), motor de regras parametrizável e microsserviços em Kubernetes sustentados por GitOps com ArgoCD e Terraform.',
+    title: 'Onboarding Digital e Validação Automatizada de Clientes',
+    problem: 'O cadastro de novos clientes dependia de etapas manuais, consultas a múltiplos sistemas e validações descentralizadas, podendo levar até 4 horas úteis para ser concluído. O processo gerava atritos na jornada digital, aumentava o esforço operacional e dificultava a escalabilidade em períodos de alta demanda.',
+    solution: 'Modernização do onboarding com uma arquitetura de microsserviços integrada a APIs externas para validação cadastral, análise de crédito e verificação de antecedentes. A jornada foi simplificada para poucos cliques, com orquestração automatizada das etapas, processamento eficiente e infraestrutura preparada para escalabilidade, observabilidade e alta disponibilidade.',
     metrics: [
-      { v: '18 min', l: 'SLA por proposta (antes 1h30)' },
-      { v: '-80%', l: 'Tempo de processamento' },
-      { v: '100%', l: 'Deploys via GitOps auditável' },
+      { v: '5 min', l: 'Tempo de cadastro por cliente (antes até 4h)' },
+      { v: '-98%', l: 'Tempo de conclusão do onboarding' },
+      { v: '100%', l: 'Fluxo digital com validações integradas' },
     ],
   },
   {
