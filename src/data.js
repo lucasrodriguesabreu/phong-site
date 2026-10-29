@@ -22,8 +22,8 @@ export const pillars = [
     title: 'Infraestrutura, Cloud & SRE',
     color: 'bg-sky',
     items: [
-      { icon: Server, t: 'Infrastructure as Code', d: 'Terraform modular em Azure e GCP, com state remoto, policy-as-code e ambientes reproduzíveis em minutos.' },
-      { icon: GitBranch, t: 'GitOps & CI/CD Avançado', d: 'GitHub Actions, Azure DevOps, ArgoCD e Helm sobre AKS/GKE. Deploys auditáveis, rollback em um commit.' },
+      { icon: Server, t: 'Infrastructure as Code', d: 'Terraform modular em Azure, AWS e GCP, com state remoto, policy-as-code e ambientes reproduzíveis em minutos.' },
+      { icon: GitBranch, t: 'GitOps & CI/CD Avançado', d: 'GitHub Actions, Azure DevOps, AWS CodeSuite, ArgoCD e Helm sobre AKS/GKE. Deploys auditáveis, rollback em um commit.' },
       { icon: Activity, t: 'Observabilidade, FinOps & DR', d: 'SLOs com Prometheus e Grafana, otimização de custos em nuvem e planos de Disaster Recovery testados com RTO/RPO definidos.' },
     ],
   },
@@ -70,7 +70,7 @@ export const steps = [
 export const stack = [
   { c: 'Backend & APIs', i: ['Java', 'Spring Boot', 'Node.js', 'Go', 'Python', 'REST', 'Microsserviços'] },
   { c: 'Frontend', i: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'] },
-  { c: 'Cloud & Containers', i: ['Azure', 'GCP', 'AWS', 'Docker', 'Kubernetes (AKS/GKE)', 'Helm'] },
+  { c: 'Cloud & Containers', i: ['Azure', 'GCP', 'AWS', 'Docker', 'Kubernetes (AKS/EKS/GKE)', 'Helm'] },
   { c: 'DevOps & IaC', i: ['Terraform', 'ArgoCD', 'GitHub Actions', 'Azure DevOps'] },
   { c: 'Observabilidade & Segurança', i: ['Prometheus', 'Grafana', 'External Secrets', 'DevSecOps'] },
 ]
