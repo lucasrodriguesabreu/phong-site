@@ -1,76 +1,168 @@
-import { Code2, Cloud, Workflow, Server, GitBranch, Activity, Clock, ShieldCheck, Zap } from 'lucide-react'
+import {
+  Activity,
+  ArrowRight,
+  BadgeCheck,
+  BriefcaseBusiness,
+  Building2,
+  CheckCircle2,
+  Clock3,
+  HardDrive,
+  Headphones,
+  Lock,
+  ShieldCheck,
+  Smartphone,
+  Sparkles,
+  TimerReset,
+  Users,
+  Wrench,
+} from 'lucide-react'
 
 export const heroMetrics = [
-  { v: '-80%', l: 'Tempo de SLA em esteiras automatizadas' },
-  { v: '0 min', l: 'Downtime em releases com blue/green' },
-  { v: '99,95%', l: 'Disponibilidade alvo das plataformas' },
+  { v: '10+', l: 'anos de atuação no mercado' },
+  { v: '24/7', l: 'monitoramento e suporte disponível' },
+  { v: 'SLA', l: 'acordado e com resposta clara' },
+  { v: '99,9%', l: 'disponibilidade em operações críticas' },
 ]
 
-export const pillars = [
+export const services = [
   {
-    tag: '50% · Software',
-    title: 'Desenvolvimento de Software & Produtos Digitais',
-    color: 'bg-primary',
-    items: [
-      { icon: Code2, t: 'Full Stack & APIs', d: 'Java, Spring Boot, Node.js, Go, Python, React e TypeScript com contratos de API versionados, testes automatizados e documentação OpenAPI.' },
-      { icon: Workflow, t: 'Modernização de Legados & Integrações', d: 'Strangler pattern para monólitos, integrações com IdWall, Gov.BR, Serasa e meios de pagamento com idempotência e rastreabilidade.' },
-      { icon: Zap, t: 'Hiperautomação de Regras de Negócio', d: 'Esteiras de crédito e processos orquestradas por motores de regras, filas e validações via API — menos operação manual, mais SLA.' },
-    ],
+    id: 'help-desk',
+    icon: Headphones,
+    title: 'Help desk e suporte de TI para empresas',
+    problem: 'Quando a empresa não tem time de TI próprio, pequenos problemas viram perda de produtividade, atrasos e fricção entre áreas.',
+    solution: 'A Phong assume o suporte técnico em regime de outsourcing com atendimento estruturado, triagem, diagnóstico e resolução com prazo e canais definidos.',
+    result: 'Seu time trabalha sem parar, com menos interrupções e com respostas mais rápidas em incidentes do dia a dia.',
+    highlights: ['Atendimento por telefone, WhatsApp e e-mail', 'Prioridade por criticidade', 'Gestão de chamados e SLA'],
   },
   {
-    tag: '50% · Plataforma',
-    title: 'Infraestrutura, Cloud & SRE',
-    color: 'bg-sky',
-    items: [
-      { icon: Server, t: 'Infrastructure as Code', d: 'Terraform modular em Azure, AWS e GCP, com state remoto, policy-as-code e ambientes reproduzíveis em minutos.' },
-      { icon: GitBranch, t: 'GitOps & CI/CD Avançado', d: 'GitHub Actions, Azure DevOps, AWS CodeSuite, ArgoCD e Helm sobre AKS/GKE. Deploys auditáveis, rollback em um commit.' },
-      { icon: Activity, t: 'Observabilidade, FinOps & DR', d: 'SLOs com Prometheus e Grafana, otimização de custos em nuvem e planos de Disaster Recovery testados com RTO/RPO definidos.' },
-    ],
+    id: 'infraestrutura',
+    icon: HardDrive,
+    title: 'Gestão de infraestrutura e redes',
+    problem: 'Servidores, redes e sistemas desatualizados geram lentidão, falhas e risco de indisponibilidade.',
+    solution: 'Monitoramos a infraestrutura, ajustamos a arquitetura, prevenimos falhas e organizamos a operação com foco em estabilidade e custo.',
+    result: 'A operação fica mais previsível, segura e preparada para crescer sem dor de cabeça.',
+    highlights: ['Monitoramento proativo', 'Documentação e governança', 'Redução de falhas e indisponibilidade'],
+  },
+  {
+    id: 'seguranca',
+    icon: Lock,
+    title: 'Segurança da informação e backup',
+    problem: 'Sem políticas claras e backups testados, a empresa fica exposta a perda de dados, ransomware e acidentes internos.',
+    solution: 'Implementamos controles e processos de segurança, proteção de acesso, backup e recuperação com testes regulares e revisão de riscos.',
+    result: 'Você reduz vulnerabilidades, melhora a resiliência e aumenta a confiança da operação.',
+    highlights: ['Backup e recuperação', 'Acesso e permissões', 'Risco e conformidade'],
+  },
+  {
+    id: 'licencas',
+    icon: BriefcaseBusiness,
+    title: 'Licenciamento e gestão de ativos de tecnologia',
+    problem: 'Licenças desorganizadas geram custos invisíveis, riscos de compliance e dificuldades de planejamento de tecnologia.',
+    solution: 'Mapeamos o ambiente, centralizamos o inventário e otimizamos a compra e utilização de software e ferramentas.',
+    result: 'A empresa reduz desperdício, melhora o controle e toma decisões com base em dados reais.',
+    highlights: ['Inventário de software', 'Negociação e otimização', 'Controle de ativos e custos'],
   },
 ]
+
+export const trustStats = [
+  { value: '10+', label: 'anos de mercado' },
+  { value: '3.500+', label: 'chamados resolvidos' },
+  { value: '< 30 min', label: 'tempo médio de resposta' },
+  { value: '24/7', label: 'monitoramento e suporte' },
+]
+
+export const testimonials = [
+  {
+    quote: 'A Phong trouxe organização para a nossa operação de TI. O suporte ficou mais rápido e a equipe passou a ter previsibilidade para crescer sem depender de improvisos.',
+    name: 'Diretora administrativa',
+    company: 'Empresa de serviços',
+  },
+  {
+    quote: 'Antes tínhamos muitos incidentes e pouca visibilidade. Hoje temos processo, SLA e um time que entende a operação da empresa.',
+    name: 'CEO',
+    company: 'Negócio de varejo',
+  },
+]
+
+export const partners = ['Microsoft', 'Fortinet', 'Cisco', 'Dell', 'VMware', 'Sophos']
 
 export const cases = [
-    {
-    badge: 'Híbrido · Software + Infra',
-    title: 'Onboarding Digital e Validação Automatizada de Clientes',
-    problem: 'O cadastro de novos clientes dependia de etapas manuais, consultas a múltiplos sistemas e validações descentralizadas, podendo levar até 4 horas úteis para ser concluído. O processo gerava atritos na jornada digital, aumentava o esforço operacional e dificultava a escalabilidade em períodos de alta demanda.',
-    solution: 'Modernização do onboarding com uma arquitetura de microsserviços integrada a APIs externas para validação cadastral, análise de crédito e verificação de antecedentes. A jornada foi simplificada para poucos cliques, com orquestração automatizada das etapas, processamento eficiente e infraestrutura preparada para escalabilidade, observabilidade e alta disponibilidade.',
+  {
+    badge: 'Suporte operacional',
+    title: 'Empresa com TI instável e sem time interno',
+    problem: 'A operação crescia, mas a estrutura de tecnologia era reativa, com chamados sem organização e altos tempos de resposta.',
+    solution: 'A Phong estruturou o suporte com canais, prioridades, monitoramento e rotina clara de atendimento.',
     metrics: [
-      { v: '5 min', l: 'Tempo de cadastro por cliente (antes até 4h)' },
-      { v: '-98%', l: 'Tempo de conclusão do onboarding' },
-      { v: '100%', l: 'Fluxo digital com validações integradas' },
+      { v: '60%', l: 'redução de incidências críticas' },
+      { v: '24h', l: 'organização do processo de atendimento' },
+      { v: 'SLA', l: 'definido por criticidade' },
     ],
   },
   {
-    badge: 'Infra/Rede + APIs',
-    title: 'Rede Híbrida em Azure & Microsserviços de Alta Disponibilidade',
-    problem: 'Data center on-premises com conectividade frágil à nuvem e APIs acopladas em um monólito; cada release exigia janela de manutenção.',
-    solution: 'Hub-and-spoke em Azure com VPN/ExpressRoute, DNS privado e firewall centralizado em Terraform. Refatoração para microsserviços em AKS com blue/green, health checks e autoscaling.',
+    badge: 'Infraestrutura + segurança',
+    title: 'Ambiente com riscos e baixa visibilidade',
+    problem: 'A empresa não conseguia mapear rotinas, backups e permissões, o que deixava a operação vulnerável e sem governança.',
+    solution: 'Realizamos diagnóstico, reorganizamos o ambiente e implementamos processos de monitoramento, backup e segurança.',
     metrics: [
-      { v: '0', l: 'Minutos de downtime em releases' },
-      { v: '99,95%', l: 'Disponibilidade das APIs' },
-      { v: 'Multi-AZ', l: 'Resiliência de rede e compute' },
+      { v: 'mais', l: 'visibilidade do ambiente' },
+      { v: '0', l: 'dependência de atendimento improvisado' },
+      { v: 'proativo', l: 'monitoramento e prevenção' },
     ],
   },
-]
-
-export const models = [
-  { n: '01', t: 'Projetos de Escopo Fechado', d: 'Entregas por sprints com escopo definido e banco de horas priorizável. Previsibilidade de prazo e custo.', b: ['Roadmap por sprint', 'Horas priorizáveis', 'Demo a cada ciclo'] },
-  { n: '02', t: 'Squads Especializadas', d: 'Outsourcing híbrido com Devs, SRE e Tech Lead integrados ao seu time e aos seus rituais.', b: ['Dev + SRE + Tech Lead', 'Escala sob demanda', 'Gestão por OKRs'] },
-  { n: '03', t: 'Assessment & Diagnóstico', d: 'Quick win de 2 a 4 semanas para mapear gargalos de arquitetura, segurança e FinOps.', b: ['Relatório executivo', 'Plano priorizado', 'Estimativa de economia'], highlight: true },
 ]
 
 export const steps = [
-  { icon: Clock, t: 'Discovery', d: 'Briefing e mapeamento' },
-  { icon: ShieldCheck, t: 'Diagnóstico', d: 'Arquitetura, segurança, custos' },
-  { icon: Code2, t: 'Execução', d: 'Sprints com demo contínua' },
-  { icon: Cloud, t: 'Operação', d: 'SRE, SLOs e melhoria contínua' },
+  { icon: Smartphone, t: 'Diagnóstico', d: 'Entendemos o cenário atual, riscos, dores e objetivos da operação.' },
+  { icon: Sparkles, t: 'Proposta', d: 'Definimos escopo, SLA, modelo de suporte e prioridades com clareza.' },
+  { icon: Wrench, t: 'Implantação', d: 'Ajustamos processos, acessos, monitoramento e evolução do ambiente.' },
+  { icon: ShieldCheck, t: 'Suporte contínuo', d: 'Acompanhamos a operação com gestão, relatórios e melhoria constante.' },
+]
+
+export const blogTopics = [
+  'Checklist: 10 riscos de TI que pequenas empresas ignoram',
+  'LGPD e segurança da informação: o que empresas deveriam revisar agora',
+  'Backup realista: como garantir recuperação em caso de ransomware',
+  'Outsourcing de TI vs. equipe interna: quando faz sentido migrar',
+  'SLA de suporte: como medir tempo de resposta e resolução',
+  'Infraestrutura estável: sinais de que sua empresa precisa de ajuda especializada',
+  'Custo de tecnologia: como reduzir desperdício sem perder performance',
+  'Quando migrar para nuvem e quais benefícios reais ela entrega',
+  'Gestão de licenças: como evitar gastos sem controle',
+  'Como criar uma política de segurança para empresas de 20 a 200 funcionários',
+]
+
+export const cityPages = [
+  'São Paulo',
+  'Rio de Janeiro',
+  'Belo Horizonte',
+  'Curitiba',
+  'Porto Alegre',
+  'Campinas',
+  'Florianópolis',
+  'Salvador',
+]
+
+export const featureHighlights = [
+  { icon: Users, text: 'Atendimento para empresas com 20 a 200 funcionários' },
+  { icon: Clock3, text: 'Tempo de resposta e SLA definidos por criticidade' },
+  { icon: BadgeCheck, text: 'Processos claros e contrato com manutenção operacional' },
+  { icon: Activity, text: 'Suporte preventivo e melhoria contínua de infraestrutura' },
 ]
 
 export const stack = [
-  { c: 'Backend & APIs', i: ['Java', 'Spring Boot', 'Node.js', 'Go', 'Python', 'REST', 'Microsserviços'] },
-  { c: 'Frontend', i: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'] },
-  { c: 'Cloud & Containers', i: ['Azure', 'GCP', 'AWS', 'Docker', 'Kubernetes (AKS/EKS/GKE)', 'Helm'] },
-  { c: 'DevOps & IaC', i: ['Terraform', 'ArgoCD', 'GitHub Actions', 'Azure DevOps'] },
-  { c: 'Observabilidade & Segurança', i: ['Prometheus', 'Grafana', 'External Secrets', 'DevSecOps'] },
+  { c: 'Suporte e operação', i: ['Help desk', 'Monitoramento', 'Gestão de incidentes', 'SLA'] },
+  { c: 'Infraestrutura', i: ['Servidores', 'Rede', 'Virtualização', 'Cloud'] },
+  { c: 'Segurança', i: ['Backup', 'Antivírus', 'Controle de acesso', 'LGPD'] },
+  { c: 'Planejamento', i: ['Diagnóstico', 'Roadmap', 'Licenciamento', 'Governança'] },
 ]
+
+export const quickActions = [
+  'Diagnóstico inicial sem compromisso',
+  'Suporte com SLA',
+  'Time especializado sem custos fixos de contratação',
+]
+
+export const arrowIcon = ArrowRight
+export const checkIcon = CheckCircle2
+export const primaryCheck = CheckCircle2
+export const accentIcon = TimerReset
+export const buildingIcon = Building2
