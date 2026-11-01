@@ -4,9 +4,9 @@ export const COMPANY = {
   // Número no formato internacional, apenas dígitos: 55 + DDD + número
   whatsappNumber: '5551992556945',
   whatsappDefaultMessage: 'Olá! Gostaria de saber mais sobre os serviços da Phong.',
-  linkedinUrl: 'https://www.linkedin.com',
-  email: 'contato@phong.com.br',
-  address: 'Brasil',
+  // Opcionais: o cartão só aparece na seção de contato quando preenchido
+  linkedinUrl: '',
+  email: '',
 }
 
 export function whatsappLink(message = COMPANY.whatsappDefaultMessage) {
