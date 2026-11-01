@@ -1,6 +1,6 @@
 export const COMPANY = {
   name: 'Phong',
-  tagline: 'Outsourcing de TI para empresas',
+  tagline: 'Squads, IA e infraestrutura para empresas',
   // Número no formato internacional, apenas dígitos: 55 + DDD + número
   whatsappNumber: '5551992556945',
   whatsappDefaultMessage: 'Olá! Gostaria de saber mais sobre os serviços da Phong.',

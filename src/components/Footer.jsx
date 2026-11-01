@@ -16,9 +16,9 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
             <p className="eyebrow text-sky">Vamos conversar</p>
-            <h2 className="mt-4 text-4xl font-bold md:text-5xl">Agende uma reunião de discovery de 30 minutos.</h2>
+            <h2 className="mt-4 text-4xl font-bold md:text-5xl">Fale com quem vai colocar a mão na massa.</h2>
             <p className="mt-6 max-w-lg text-ink-muted">
-              Entendemos seu contexto, gargalos e metas. Você sai com um direcionamento técnico claro — sem compromisso.
+              Squads, IA ou infraestrutura: conte o desafio e receba um direcionamento técnico claro, sem compromisso.
             </p>
           </div>
           <div className="grid gap-4 self-end">
