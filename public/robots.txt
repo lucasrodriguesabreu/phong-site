@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phong.com.br/sitemap.xml

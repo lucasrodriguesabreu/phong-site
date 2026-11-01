@@ -3,30 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      // Força HTTPS em produção (localhost e IPs de desenvolvimento continuam em http)
-      if (location.protocol === 'http:' && /(^|\.)phong\.it$/.test(location.hostname)) {
+      if (location.protocol === 'http:' && /(^|\.)phong\.com\.br$/.test(location.hostname)) {
         location.replace('https://' + location.host + location.pathname + location.search + location.hash)
       }
     </script>
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="canonical" href="https://phong.it/" />
+    <link rel="canonical" href="https://phong.com.br/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#031238" />
-    <meta name="description" content="Phong — consultoria de TI para transformar tecnologia em resultado." />
+    <meta name="description" content="A Phong coloca squads de engenharia, projetos de IA aplicada e infraestrutura cloud (AWS, Azure, GCP) para rodar na sua operação, com time sênior e custo competitivo." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://phong.it/" />
-    <meta property="og:title" content="Phong | Consultoria de TI" />
-    <meta property="og:description" content="Phong — consultoria de TI para transformar tecnologia em resultado." />
-    <meta property="og:image" content="https://phong.it/thumb.png" />
+    <meta property="og:url" content="https://phong.com.br/" />
+    <meta property="og:title" content="Phong | Squads, IA e infraestrutura cloud para empresas" />
+    <meta property="og:description" content="A Phong coloca squads de engenharia, projetos de IA aplicada e infraestrutura cloud (AWS, Azure, GCP) para rodar na sua operação, com time sênior e custo competitivo." />
+    <meta property="og:image" content="https://phong.com.br/thumb.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://phong.it/thumb.png" />
+    <meta name="twitter:title" content="Phong | Squads, IA e infraestrutura cloud para empresas" />
+    <meta name="twitter:description" content="A Phong coloca squads de engenharia, projetos de IA aplicada e infraestrutura cloud (AWS, Azure, GCP) para rodar na sua operação, com time sênior e custo competitivo." />
+    <meta name="twitter:image" content="https://phong.com.br/thumb.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
-    <title>Phong | Consultoria de TI</title>
+    <title>Phong | Squads, IA e infraestrutura cloud para empresas</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://phong.com.br/#organization",
+            "name": "Phong",
+            "url": "https://phong.com.br/",
+            "logo": "https://phong.com.br/thumb.png",
+            "description": "Empresa brasileira de outsourcing de tecnologia: squads de engenharia, IA aplicada e infraestrutura cloud.",
+            "areaServed": "BR"
+          },
+          {
+            "@type": "ProfessionalService",
+            "name": "Phong",
+            "url": "https://phong.com.br/",
+            "image": "https://phong.com.br/thumb.png",
+            "areaServed": "BR",
+            "provider": { "@id": "https://phong.com.br/#organization" },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Serviços Phong",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Squads e engenheiros alocados" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IA aplicada e automação de processos" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Infraestrutura cloud, DevOps e segurança" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desenvolvimento de software e produtos digitais" } }
+              ]
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <h1>Phong: squads, IA e infraestrutura cloud para empresas</h1>
+      <p>Engenheiros alocados, projetos de IA aplicada, infraestrutura cloud (AWS, Azure, GCP), DevOps e segurança. Fale com a Phong pelo WhatsApp.</p>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
