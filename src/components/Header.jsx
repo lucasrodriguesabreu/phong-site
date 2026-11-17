@@ -1,5 +1,6 @@
 import { COMPANY } from '../config.js'
 import logo from '../assets/logo.png'
+import LinkedinIcon from './LinkedinIcon.jsx'
 
 const links = [
   { href: '#servicos', label: 'Serviços' },
@@ -21,12 +22,26 @@ export default function Header() {
             <a key={l.href} href={l.href} className="hover:text-primary">{l.label}</a>
           ))}
         </nav>
-        <a
-          href="#diagnostico"
-          className="bg-primary px-4 py-2 font-display text-xs font-semibold text-primary-foreground transition hover:opacity-90"
-        >
-          Vamos conversar
-        </a>
+        <div className="flex items-center gap-3">
+          {COMPANY.linkedinUrl && (
+            <a
+              href={COMPANY.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${COMPANY.name} no LinkedIn`}
+              title="LinkedIn"
+              className="p-2 text-muted-foreground transition hover:text-primary"
+            >
+              <LinkedinIcon className="h-5 w-5" />
+            </a>
+          )}
+          <a
+            href="#diagnostico"
+            className="bg-primary px-4 py-2 font-display text-xs font-semibold text-primary-foreground transition hover:opacity-90"
+          >
+            Vamos conversar
+          </a>
+        </div>
       </div>
     </header>
   )
