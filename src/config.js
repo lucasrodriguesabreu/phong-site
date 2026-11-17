@@ -5,7 +5,7 @@ export const COMPANY = {
   whatsappNumber: '5551992556945',
   whatsappDefaultMessage: 'Olá! Gostaria de saber mais sobre os serviços da Phong.',
   // Opcionais: o cartão só aparece na seção de contato quando preenchido
-  linkedinUrl: '',
+  linkedinUrl: 'https://www.linkedin.com/company/phong-it/',
   email: '',
 }
 

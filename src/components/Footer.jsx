@@ -1,11 +1,12 @@
-import { ArrowRight, ExternalLink, Mail, MessageCircle } from 'lucide-react'
+import { ArrowRight, Mail, MessageCircle } from 'lucide-react'
 import { COMPANY, whatsappLink } from '../config.js'
+import LinkedinIcon from './LinkedinIcon.jsx'
 
 const year = new Date().getFullYear()
 
 const contacts = [
   { icon: MessageCircle, t: 'WhatsApp Business', d: 'Resposta em horário comercial', href: whatsappLink(), external: true },
-  COMPANY.linkedinUrl && { icon: ExternalLink, t: 'LinkedIn', d: 'Acompanhe nossos conteúdos', href: COMPANY.linkedinUrl, external: true },
+  COMPANY.linkedinUrl && { icon: LinkedinIcon, t: 'LinkedIn', d: 'Acompanhe nossos conteúdos', href: COMPANY.linkedinUrl, external: true },
   COMPANY.email && { icon: Mail, t: 'E-mail', d: COMPANY.email, href: `mailto:${COMPANY.email}` },
 ].filter(Boolean)
 
@@ -43,7 +44,21 @@ export default function Footer() {
         </div>
         <div className="mt-20 flex flex-wrap justify-between gap-4 border-t border-ink-foreground/10 pt-8 text-sm text-ink-muted">
           <span className="font-display font-bold text-ink-foreground">{COMPANY.name}<span className="text-sky">.</span></span>
-          <span>© {year} {COMPANY.name} — {COMPANY.tagline}. Todos os direitos reservados.</span>
+          <span className="flex flex-wrap items-center gap-4">
+            <span>© {year} {COMPANY.name} — {COMPANY.tagline}. Todos os direitos reservados.</span>
+            {COMPANY.linkedinUrl && (
+              <a
+                href={COMPANY.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${COMPANY.name} no LinkedIn`}
+                title="LinkedIn"
+                className="text-ink-muted transition hover:text-sky"
+              >
+                <LinkedinIcon className="h-5 w-5" />
+              </a>
+            )}
+          </span>
         </div>
       </div>
     </footer>
