@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Post LinkedIn Phong</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#031238; --navy:#0b1a3d; --blue:#0a6fe0; --sky:#3aa0ff; --cyan:#14b8ff; --accent:#dbeaff; --muted:#9fb0d3; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { width:1080px; height:1350px; background:var(--ink); }
+  body { font-family:"Manrope",sans-serif; color:#f2f6fc; position:relative; overflow:hidden; }
+  .d { font-family:"Sora",sans-serif; letter-spacing:-0.03em; }
+  .abs { position:absolute; }
+
+  .glow { left:-200px; top:-260px; width:900px; height:900px; border-radius:50%;
+          background:radial-gradient(circle, rgba(10,111,224,.35), rgba(10,111,224,0) 65%); }
+
+  .top { left:80px; right:80px; top:84px; display:flex; justify-content:space-between; align-items:center; }
+  .eyebrow { font-family:"Sora"; font-size:20px; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--sky); }
+  .pill { font-family:"Sora"; font-size:17px; font-weight:600; letter-spacing:.12em; text-transform:uppercase;
+          color:var(--muted); border:1.5px solid #22396e; border-radius:999px; padding:10px 20px; }
+
+  h1 { left:80px; right:80px; top:168px; font-size:84px; line-height:1.02; font-weight:800; color:#fff; }
+  h1 .g { background:linear-gradient(135deg, var(--cyan), var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+
+  /* Gráfico de barras inspirado no símbolo */
+  .chart { left:80px; top:500px; width:920px; height:430px; }
+  .stat { position:absolute; bottom:0; display:flex; align-items:flex-end; gap:36px; }
+  .bar { width:150px; border-radius:18px;
+         clip-path:polygon(0 18%, 100% 0, 100% 100%, 0 100%);
+         background:linear-gradient(170deg, var(--cyan), var(--blue)); }
+  .bar.low { background:linear-gradient(170deg, #2a4a8f, #1a2f63); }
+  .num { font-family:"Sora"; font-weight:800; font-size:128px; line-height:.9; letter-spacing:-0.05em; }
+  .lbl { font-size:25px; line-height:1.3; font-weight:600; color:#cfdaf0; max-width:300px; margin-top:12px; }
+  .lbl b { color:#fff; }
+
+  .src { left:80px; top:960px; font-size:16px; color:#6f84b3; letter-spacing:.02em; }
+
+  .path { left:80px; right:80px; top:1012px; display:flex; gap:10px; }
+  .step { flex:1; background:rgba(219,234,255,.06); border:1.5px solid #1e3366; border-radius:14px; padding:16px 18px; }
+  .step .k { font-family:"Sora"; font-size:15px; font-weight:600; color:var(--sky); letter-spacing:.14em; }
+  .step .t { font-family:"Sora"; font-size:22px; font-weight:700; color:#fff; margin-top:6px; letter-spacing:-0.01em; }
+
+  svg.waves { left:0; bottom:0; width:1080px; height:230px; }
+
+  .foot { left:80px; right:80px; bottom:56px; display:flex; justify-content:space-between; align-items:flex-end; }
+  .logo { width:236px; height:65.5px; background:url(logo.png) 0 0 / 100% 100% no-repeat; filter:url(#towhite); clip-path:inset(0 2px 2px 0); }
+  .url { font-family:"Sora"; font-size:22px; font-weight:600; color:#fff; letter-spacing:.02em; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="towhite" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 -4 -4 0 11.5"/>
+    </filter>
+  </defs>
+</svg>
+
+<div class="abs glow"></div>
+
+<div class="abs top">
+  <span class="eyebrow">Tendências 2027 · IA</span>
+  <span class="pill">Agentes de IA</span>
+</div>
+
+<h1 class="abs d">Todo mundo quer agentes de IA.<br><span class="g">Poucos sabem governá-los.</span></h1>
+
+<div class="abs chart">
+  <div class="stat" style="left:0">
+    <div class="bar" style="height:400px"></div>
+    <div>
+      <div class="num d">74%</div>
+      <div class="lbl">das empresas planejam <b>colocar agentes em operação</b> em até 2 anos</div>
+    </div>
+  </div>
+  <div class="stat" style="left:500px">
+    <div class="bar low" style="height:120px"></div>
+    <div>
+      <div class="num d" style="color:#8fa3cf">21%</div>
+      <div class="lbl">têm <b>governança madura</b> para agentes autônomos</div>
+    </div>
+  </div>
+</div>
+
+<div class="abs src">Fonte: pesquisa Deloitte sobre IA agêntica nas empresas, 2026</div>
+
+<div class="abs path">
+  <div class="step"><div class="k">01</div><div class="t">Caso de uso com métrica</div></div>
+  <div class="step"><div class="k">02</div><div class="t">PoC com dados reais</div></div>
+  <div class="step"><div class="k">03</div><div class="t">Identidade e auditoria</div></div>
+  <div class="step"><div class="k">04</div><div class="t">Custo e SLO em produção</div></div>
+</div>
+
+<svg class="abs waves" id="w" viewBox="0 0 1080 230" preserveAspectRatio="none"></svg>
+
+<div class="abs foot">
+  <div class="logo" role="img" aria-label="Phong"></div>
+  <div class="url">phong.com.br</div>
+</div>
+
+<script>
+  // Ondas de profundidade do manual de marca
+  (function () {
+    const svg = document.getElementById('w'); const W = 1080, H = 230, n = 14;
+    let out = '<defs><linearGradient id="gw" x1="0" x2="1"><stop offset="0" stop-color="#0a3fd8"/><stop offset=".5" stop-color="#5f9bff"/><stop offset="1" stop-color="#1f5cf0"/></linearGradient></defs>';
+    for (let i = 0; i < n; i++) {
+      const t = i / (n - 1);
+      const y0 = 60 + t * 150, y1 = 20 + t * 170, ym = 200 - (1 - t) * 30 + t * 10;
+      const a = (0.12 + 0.45 * t).toFixed(2);
+      out += '<path d="M0,' + (y0 + 20) + ' Q540,' + (ym + 10) + ' ' + W + ',' + (y1 + 10) + ' L' + W + ',' + H + ' L0,' + H + ' Z" fill="url(#gw)" opacity="' + a + '" stroke="rgba(255,255,255,.35)" stroke-width="1"/>';
+    }
+    svg.innerHTML = out;
+  })();
+</script>
+</body>
+</html>
